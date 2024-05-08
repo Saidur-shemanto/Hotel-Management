@@ -35,28 +35,28 @@
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
+                            <li><a>Rooms</a></li>
                             <li>
-                                <a>Item2</a>
+                                <a>Services</a>
 
                             </li>
-                            <li><a>Item 3</a></li>
+                            <li><a>Pricing</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">daisyUI</a>
+                    <a class="cursor-pointer"><img src="./media/Logo.png" alt="" class="w-10 lg:w-14"></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
+                        <li><a class="text-xl">Rooms</a></li>
                         <li>
-                            <a>Item 2</a>
+                            <a class="text-xl">Services</a>
 
                         </li>
-                        <li><a>Item 3</a></li>
+                        <li><a class="text-xl">Pricing</a></li>
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn">Button</a>
+                    <a class="btn bg-[#65AEF2] text-white">Button</a>
                 </div>
             </div>
         </nav>
@@ -94,7 +94,7 @@
                 <p class="text-2xl font-bold">Book a room</p>
                 <p>Discover the perfect space for you</p>
             </div>
-            <div class="container mx-auto flex flex-1 justify-center text-center gap-4 ">
+            <div class="container mx-auto flex lg:flex-row flex-col justify-center text-center gap-4 ">
                 <!-- <label class="form-control w-full max-w-xs">
 
                     <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
@@ -103,7 +103,7 @@
                         <span class="label-text-alt">Bottom Right label</span>
                     </div>
                 </label> -->
-                <div class="w-1/3">
+                <div>
 
 
                     <div class="label">
@@ -147,63 +147,63 @@
                         <input type="date" class="grow" placeholder="Email" />
                     </label>
                 </div>
-                <div class="w-1/3 flex gap-4">
-                    <div class="w-1/2">
+
+                <div class="">
 
 
-                        <div class="label">
-                            <span class="label-text">Location</span>
-                        </div>
-                        <label class="input input-bordered flex items-center gap-2">
-
-
-                            <input type="text" class="grow" placeholder="Location" />
-                        </label>
+                    <div class="label">
+                        <span class="label-text">Location</span>
                     </div>
-                    <div class="w-1/2">
+                    <label class="input input-bordered flex items-center gap-2">
 
 
-                        <div class="label">
-                            <span class="label-text">Members</span>
-                        </div>
-                        <label class="input input-bordered flex items-center gap-2">
-
-
-
-                            <input type="number" class="grow" placeholder="Number of Members" />
-                        </label>
-                    </div>
-
+                        <input type="text" class="grow" placeholder="Location" />
+                    </label>
                 </div>
-                <div class="w-1/3">
+                <div class="">
+
+
+                    <div class="label">
+                        <span class="label-text">Members</span>
+                    </div>
+                    <label class="input input-bordered flex items-center gap-2">
+
+
+
+                        <input type="number" class="grow" placeholder="Number of Members" />
+                    </label>
+                </div>
+
+
+                <div class="">
                     <div class="label">
                         <span class="label-text text-white">........</span>
                     </div>
-                    <button class="btn w-52">Click me</button>
+                    <button class="btn bg-[#65AEF2] text-white">Submit</button>
                 </div>
 
             </div>
         </section>
-        <section class="flex gap-4 bg-[#F3F3F3] p-14 mt-8">
+        <section class="lg:flex lg:flex-row gap-4  bg-[#F3F3F3] lg:p-14 mt-8">
             <div
-                class="bg-[url('./media/Dining.png')] bg-cover bg-no-repeat bg-center rounded-2xl w-1/2 h-[600px] text-white text-3xl font-bold flex items-end justify-center pb-10">
+                class="bg-[url('./media/HotelRoom.png')] bg-cover bg-no-repeat bg-center rounded-2xl lg:w-1/2 w-full h-[600px] text-white text-3xl font-bold flex items-end justify-center pb-10 lg:mb-0 mb-6">
                 Rooms
             </div>
-            <div class="grid grid-cols-2 gap-4 w-full">
+            <div class="lg:grid lg:grid-cols-2 gap-4 w-full">
                 <div
-                    class="bg-[url('./media/Dining.png')] bg-cover bg-no-repeat bg-center rounded-2xl w-full text-white text-3xl font-bold flex items-end justify-center pb-10">
+                    class="bg-[url('./media/Dining.png')] bg-cover bg-no-repeat bg-center rounded-2xl w-full lg:h-full h-[600px] text-white text-3xl font-bold flex items-end justify-center pb-10 lg:mb-0 mb-6">
                     Dining
                 </div>
                 <div
-                    class="bg-[url('./media/conf.png')] bg-cover bg-no-repeat bg-center rounded-2xl text-white text-3xl font-bold flex items-end justify-center pb-10">
+                    class="bg-[url('./media/conf.png')] bg-cover bg-no-repeat bg-center rounded-2xl lg:h-full h-[600px] text-white text-3xl font-bold flex items-end justify-center pb-10 lg:mb-0 mb-6">
                     Conferences &
                     Meetings</div>
                 <div
-                    class="bg-[url('./media/service.png')] bg-cover bg-no-repeat bg-center rounded-2xl text-white text-3xl font-bold flex items-end justify-center pb-10">
+                    class="bg-[url('./media/service.png')] bg-cover bg-no-repeat bg-center rounded-2xl lg:h-full h-[600px] text-white text-3xl font-bold flex items-end justify-center pb-10 lg:mb-0 mb-6">
                     Services and
                     Facilities</div>
                 <div
-                    class="bg-[url('./media/wedding.png')] bg-cover bg-no-repeat bg-center rounded-2xl text-white text-3xl font-bold flex items-end justify-center pb-10">
+                    class="bg-[url('./media/wedding.png')] bg-cover bg-no-repeat bg-center rounded-2xl lg:h-full h-[600px] text-white text-3xl font-bold flex items-end justify-center pb-10 lg:mb-0 mb-6">
                     Wedding
                     Packages</div>
             </div>
@@ -212,7 +212,8 @@
 
 
         </section>
-        <section class="flex items-center justify-between container mx-auto mt-8">
+        <section
+            class="flex lg:flex-row flex-col lg:items-center lg:justify-between container mx-auto mt-8 lg:gap-0 gap-4">
             <div class="flex flex-col gap-4">
                 <p class="font-medium text-3xl text-[#65AEF2]">Special Offers</p>
                 <p class="font-medium text-6xl"> Best offer of the month</p>
@@ -222,14 +223,14 @@
             </div>
             <div><a href="" class="text-[#65AEF2] font-medium text-3xl">VIEW ALL</a></div>
         </section>
-        <section class="container mx-auto flex justify-between flex-1">
-            <div class="card bg-base-100 shadow-xl w-[30%]">
+        <section class="container mx-auto flex lg:flex-row flex-col justify-between flex-1">
+            <div class="card bg-base-100 shadow-xl lg:w-[30%]">
                 <figure class="px-10 pt-10">
                     <img src="./media/HotelRoom.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body">
                     <p class="text-[12px]">Room</p>
-                    <div class="flex  font-bold">
+                    <div class="flex lg:flex-row flex-col  font-bold">
                         <p class=" text-2xl">Honeymoon</p>
                         <div class="flex items-center gap-1">
                             <svg width="13.000000" height="16.000000" viewBox="0 0 13 16" fill="none"
@@ -255,13 +256,13 @@
 
                 </div>
             </div>
-            <div class="card w-[30%] bg-base-100 shadow-xl">
+            <div class="card lg:w-[30%] bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                     <img src="./media/HotelRoom.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body">
                     <p class="text-[12px]">Room</p>
-                    <div class="flex  font-bold">
+                    <div class="flex lg:flex-row flex-col font-bold">
                         <p class=" text-2xl">Honeymoon</p>
                         <div class="flex items-center gap-1">
                             <svg width="13.000000" height="16.000000" viewBox="0 0 13 16" fill="none"
@@ -287,13 +288,13 @@
 
                 </div>
             </div>
-            <div class="card w-[30%] bg-base-100 shadow-xl">
+            <div class="card lg:w-[30%] bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                     <img src="./media/HotelRoom.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body">
                     <p class="text-[12px]">Room</p>
-                    <div class="flex  font-bold">
+                    <div class="flex lg:flex-row flex-col  font-bold">
                         <p class=" text-2xl">Honeymoon</p>
                         <div class="flex items-center gap-1">
                             <svg width="13.000000" height="16.000000" viewBox="0 0 13 16" fill="none"
