@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.5/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="">
+    <header class="flex flex-col items-center">
+        <nav class="container mx-auto absolute flex items-center">
+            <div class="navbar bg-white rounded-2xl">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Item2</a>
+
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">daisyUI</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Item 1</a></li>
+                        <li>
+                            <a>Item 2</a>
+
+                        </li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn">Button</a>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <div class="carousel w-full">
+                <div id="item1" class="carousel-item w-full">
+                    <img src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+                        class="w-full" />
+                </div>
+                <div id="item2" class="carousel-item w-full">
+                    <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+                        class="w-full" />
+                </div>
+                <div id="item3" class="carousel-item w-full">
+                    <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+                        class="w-full" />
+                </div>
+                <div id="item4" class="carousel-item w-full">
+                    <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+                        class="w-full" />
+                </div>
+            </div>
+            <div class="flex justify-center w-full py-2 gap-2 relative bottom-10">
+                <a href="#item1" class="btn btn-xs">1</a>
+                <a href="#item2" class="btn btn-xs">2</a>
+                <a href="#item3" class="btn btn-xs">3</a>
+                <a href="#item4" class="btn btn-xs">4</a>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="bg-[#E9F3F7] container mx-auto rounded-2xl py-6 px-6">
+            <div class="text-center">
+                <p class="text-2xl font-bold">Book a room</p>
+                <p>Discover the perfect space for you</p>
+            </div>
+            <div class="container mx-auto flex flex-1 justify-center text-center gap-4 ">
+                <!-- <label class="form-control w-full max-w-xs">
+
+                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                    <div class="label">
+                        <span class="label-text-alt">Bottom Left label</span>
+                        <span class="label-text-alt">Bottom Right label</span>
+                    </div>
+                </label> -->
+                <div class="w-1/3">
+
+
+                    <div class="label">
+                        <span class="label-text">Date</span>
+                    </div>
+                    <label class="input input-bordered flex items-center gap-2">
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_38)">
+                                <path
+                                    d="M21.3333 8.81333V20H2.66666V5.33333H4.66666V4H2.5C2.34416 4.0026 2.19035 4.03588 2.04738 4.09794C1.9044 4.15999 1.77505 4.24961 1.66671 4.36166C1.55837 4.47371 1.47316 4.60601 1.41596 4.751C1.35876 4.89599 1.33068 5.05083 1.33333 5.20667V20.1267C1.33068 20.2825 1.35876 20.4373 1.41596 20.5823C1.47316 20.7273 1.55837 20.8596 1.66671 20.9717C1.77505 21.0837 1.9044 21.1733 2.04738 21.2354C2.19035 21.2974 2.34416 21.3307 2.5 21.3333H21.5C21.6558 21.3307 21.8096 21.2974 21.9526 21.2354C22.0956 21.1733 22.225 21.0837 22.3333 20.9717C22.4416 20.8596 22.5268 20.7273 22.584 20.5823C22.6412 20.4373 22.6693 20.2825 22.6667 20.1267V8.22667C22.2535 8.48669 21.8042 8.68437 21.3333 8.81333Z"
+                                    fill="#1E1E1E" />
+                                <path d="M5.33334 9.33334H6.66668V10.6667H5.33334V9.33334Z" fill="#1E1E1E" />
+                                <path d="M9.33334 9.33334H10.6667V10.6667H9.33334V9.33334Z" fill="#1E1E1E" />
+                                <path d="M13.3333 9.33334H14.6667V10.6667H13.3333V9.33334Z" fill="#1E1E1E" />
+                                <path d="M17.3333 9.33334H18.6667V10.6667H17.3333V9.33334Z" fill="#1E1E1E" />
+                                <path d="M5.33334 12.6667H6.66668V14H5.33334V12.6667Z" fill="#1E1E1E" />
+                                <path d="M9.33334 12.6667H10.6667V14H9.33334V12.6667Z" fill="#1E1E1E" />
+                                <path d="M13.3333 12.6667H14.6667V14H13.3333V12.6667Z" fill="#1E1E1E" />
+                                <path d="M17.3333 12.6667H18.6667V14H17.3333V12.6667Z" fill="#1E1E1E" />
+                                <path d="M5.33334 16H6.66668V17.3333H5.33334V16Z" fill="#1E1E1E" />
+                                <path d="M9.33334 16H10.6667V17.3333H9.33334V16Z" fill="#1E1E1E" />
+                                <path d="M13.3333 16H14.6667V17.3333H13.3333V16Z" fill="#1E1E1E" />
+                                <path d="M17.3333 16H18.6667V17.3333H17.3333V16Z" fill="#1E1E1E" />
+                                <path
+                                    d="M6.66667 6.66668C6.84348 6.66668 7.01305 6.59644 7.13807 6.47141C7.2631 6.34639 7.33333 6.17682 7.33333 6.00001V2.00001C7.33333 1.8232 7.2631 1.65363 7.13807 1.52861C7.01305 1.40358 6.84348 1.33334 6.66667 1.33334C6.48986 1.33334 6.32029 1.40358 6.19526 1.52861C6.07024 1.65363 6 1.8232 6 2.00001V6.00001C6 6.17682 6.07024 6.34639 6.19526 6.47141C6.32029 6.59644 6.48986 6.66668 6.66667 6.66668Z"
+                                    fill="#1E1E1E" />
+                                <path d="M15 4H8.66666V5.33333H15.1867C15.0645 4.89935 15.0017 4.45083 15 4Z"
+                                    fill="#1E1E1E" />
+                                <path
+                                    d="M20 7.33332C21.8409 7.33332 23.3333 5.84094 23.3333 3.99999C23.3333 2.15904 21.8409 0.666656 20 0.666656C18.159 0.666656 16.6667 2.15904 16.6667 3.99999C16.6667 5.84094 18.159 7.33332 20 7.33332Z"
+                                    fill="#1E1E1E" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_38">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                        <input type="date" class="grow" placeholder="Email" />
+                    </label>
+                </div>
+                <div class="w-1/3 flex gap-4">
+                    <div class="w-1/2">
+
+
+                        <div class="label">
+                            <span class="label-text">Location</span>
+                        </div>
+                        <label class="input input-bordered flex items-center gap-2">
+
+
+                            <input type="text" class="grow" placeholder="Location" />
+                        </label>
+                    </div>
+                    <div class="w-1/2">
+
+
+                        <div class="label">
+                            <span class="label-text">Members</span>
+                        </div>
+                        <label class="input input-bordered flex items-center gap-2">
+
+
+
+                            <input type="number" class="grow" placeholder="Number of Members" />
+                        </label>
+                    </div>
+
+                </div>
+                <div class="w-1/3">
+                    <div class="label">
+                        <span class="label-text text-white">........</span>
+                    </div>
+                    <button class="btn w-52">Click me</button>
+                </div>
+
+            </div>
+        </section>
+        <section class="flex gap-4 bg-[#F3F3F3] p-14 mt-8">
+            <div
+                class="bg-[url('./media/Dining.png')] bg-cover bg-no-repeat bg-center rounded-2xl w-1/2 h-[600px] text-white text-3xl font-bold flex items-end justify-center pb-10">
+                Rooms
+            </div>
+            <div class="grid grid-cols-2 gap-4 w-full">
+                <div
+                    class="bg-[url('./media/Dining.png')] bg-cover bg-no-repeat bg-center rounded-2xl w-full text-white text-3xl font-bold flex items-end justify-center pb-10">
+                    Dining
+                </div>
+                <div
+                    class="bg-[url('./media/conf.png')] bg-cover bg-no-repeat bg-center rounded-2xl text-white text-3xl font-bold flex items-end justify-center pb-10">
+                    Conferences &
+                    Meetings</div>
+                <div
+                    class="bg-[url('./media/service.png')] bg-cover bg-no-repeat bg-center rounded-2xl text-white text-3xl font-bold flex items-end justify-center pb-10">
+                    Services and
+                    Facilities</div>
+                <div
+                    class="bg-[url('./media/wedding.png')] bg-cover bg-no-repeat bg-center rounded-2xl text-white text-3xl font-bold flex items-end justify-center pb-10">
+                    Wedding
+                    Packages</div>
+            </div>
+
+
+
+
+        </section>
+        <section class="flex items-center justify-between container mx-auto mt-8">
+            <div class="flex flex-col gap-4">
+                <p class="font-medium text-3xl text-[#65AEF2]">Special Offers</p>
+                <p class="font-medium text-6xl"> Best offer of the month</p>
+                <p class="w-3/5"> Experience Fantastic Benefits and Obtain Better Rates When You Make a Direct Booking
+                    on Our Official
+                    Website</p>
+            </div>
+            <div><a href="" class="text-[#65AEF2] font-medium text-3xl">VIEW ALL</a></div>
+        </section>
+        <section class="container mx-auto flex justify-between flex-1">
+            <div class="card bg-base-100 shadow-xl w-[30%]">
+                <figure class="px-10 pt-10">
+                    <img src="./media/HotelRoom.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body">
+                    <p class="text-[12px]">Room</p>
+                    <div class="flex  font-bold">
+                        <p class=" text-2xl">Honeymoon</p>
+                        <div class="flex items-center gap-1">
+                            <svg width="13.000000" height="16.000000" viewBox="0 0 13 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                    Created with Pixso.
+                                </desc>
+                                <defs />
+                                <path id="Vector"
+                                    d="M6.16 6.39C4.35 6.37 2.97 4.91 2.96 3.19C2.99 1.4 4.45 0.01 6.16 0C7.97 0.06 9.34 1.45 9.36 3.19C9.32 4.99 7.86 6.38 6.16 6.39ZM8.74 7.06C11.02 7.09 12.17 9.08 12.18 11.08L12.18 16L9.95 16L9.95 11.67C9.9 11.37 9.7 11.27 9.51 11.3C9.34 11.33 9.18 11.47 9.17 11.67L9.17 16L2.97 16L2.97 11.67C2.93 11.39 2.75 11.28 2.57 11.29C2.38 11.3 2.2 11.45 2.19 11.67L2.19 16L9.15e-5 16L9.15e-5 11.08C-0.02 8.95 1.33 7.07 3.45 7.06L8.74 7.06Z"
+                                    fill="#1E1E1E" fill-opacity="1.000000" fill-rule="nonzero" />
+                            </svg>
+                            <span>2</span>
+
+                        </div>
+
+                    </div>
+                    <p class="text-[12px]">Indulge in a Memorable One-Time Romantic Dinner for Two</p>
+                    <div class="flex  justify-center items-center ">
+                        <p class="flex-grow-0"><span class="font-bold text-4xl">$999</span>/night</p>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="card w-[30%] bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src="./media/HotelRoom.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body">
+                    <p class="text-[12px]">Room</p>
+                    <div class="flex  font-bold">
+                        <p class=" text-2xl">Honeymoon</p>
+                        <div class="flex items-center gap-1">
+                            <svg width="13.000000" height="16.000000" viewBox="0 0 13 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                    Created with Pixso.
+                                </desc>
+                                <defs />
+                                <path id="Vector"
+                                    d="M6.16 6.39C4.35 6.37 2.97 4.91 2.96 3.19C2.99 1.4 4.45 0.01 6.16 0C7.97 0.06 9.34 1.45 9.36 3.19C9.32 4.99 7.86 6.38 6.16 6.39ZM8.74 7.06C11.02 7.09 12.17 9.08 12.18 11.08L12.18 16L9.95 16L9.95 11.67C9.9 11.37 9.7 11.27 9.51 11.3C9.34 11.33 9.18 11.47 9.17 11.67L9.17 16L2.97 16L2.97 11.67C2.93 11.39 2.75 11.28 2.57 11.29C2.38 11.3 2.2 11.45 2.19 11.67L2.19 16L9.15e-5 16L9.15e-5 11.08C-0.02 8.95 1.33 7.07 3.45 7.06L8.74 7.06Z"
+                                    fill="#1E1E1E" fill-opacity="1.000000" fill-rule="nonzero" />
+                            </svg>
+                            <span>2</span>
+
+                        </div>
+
+                    </div>
+                    <p class="text-[12px]">Indulge in a Memorable One-Time Romantic Dinner for Two</p>
+                    <div class="flex  justify-center items-center ">
+                        <p class="flex-grow-0"><span class="font-bold text-4xl">$999</span>/night</p>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="card w-[30%] bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src="./media/HotelRoom.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body">
+                    <p class="text-[12px]">Room</p>
+                    <div class="flex  font-bold">
+                        <p class=" text-2xl">Honeymoon</p>
+                        <div class="flex items-center gap-1">
+                            <svg width="13.000000" height="16.000000" viewBox="0 0 13 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                    Created with Pixso.
+                                </desc>
+                                <defs />
+                                <path id="Vector"
+                                    d="M6.16 6.39C4.35 6.37 2.97 4.91 2.96 3.19C2.99 1.4 4.45 0.01 6.16 0C7.97 0.06 9.34 1.45 9.36 3.19C9.32 4.99 7.86 6.38 6.16 6.39ZM8.74 7.06C11.02 7.09 12.17 9.08 12.18 11.08L12.18 16L9.95 16L9.95 11.67C9.9 11.37 9.7 11.27 9.51 11.3C9.34 11.33 9.18 11.47 9.17 11.67L9.17 16L2.97 16L2.97 11.67C2.93 11.39 2.75 11.28 2.57 11.29C2.38 11.3 2.2 11.45 2.19 11.67L2.19 16L9.15e-5 16L9.15e-5 11.08C-0.02 8.95 1.33 7.07 3.45 7.06L8.74 7.06Z"
+                                    fill="#1E1E1E" fill-opacity="1.000000" fill-rule="nonzero" />
+                            </svg>
+                            <span>2</span>
+
+                        </div>
+
+                    </div>
+                    <p class="text-[12px]">Indulge in a Memorable One-Time Romantic Dinner for Two</p>
+                    <div class="flex  justify-center items-center ">
+                        <p class="flex-grow-0"><span class="font-bold text-4xl">$999</span>/night</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer p-10 bg-black text-white mt-8">
+        <aside>
+            <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                clip-rule="evenodd" class="fill-current">
+                <path
+                    d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
+                </path>
+            </svg>
+            <p>ACME Industries Ltd.<br>Providing reliable tech since 1992</p>
+        </aside>
+        <nav>
+            <h6 class="footer-title">Services</h6>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Company</h6>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Legal</h6>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form>
+            <h6 class="footer-title">Newsletter</h6>
+            <fieldset class="form-control w-80">
+                <label class="label">
+                    <span class="label-text text-white">Enter your email address</span>
+                </label>
+                <div class="join">
+                    <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
+                    <button class="btn btn-primary join-item">Subscribe</button>
+                </div>
+            </fieldset>
+        </form>
+    </footer>
+
+
+</body>
+
+</html>
