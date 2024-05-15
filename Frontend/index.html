@@ -22,7 +22,7 @@
 
 <body class="">
     <header class="flex flex-col items-center">
-        <nav class="container mx-auto absolute flex items-center">
+        <nav class="container mx-auto static lg:absolute flex items-center">
             <div class="navbar bg-[#18458B] rounded-2xl text-white">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -56,11 +56,12 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn bg-[#65AEF2] text-white">Button</a>
+                    <a class="border-4 border-white rounded-full cursor-pointer"><img src="./media/hitler.png" alt=""
+                            class="w-[50px] h-[50px] rounded-full"></a>
                 </div>
             </div>
         </nav>
-        <div>
+        <div class="hidden lg:block">
             <div class="carousel w-full">
                 <div id="item1" class="carousel-item w-full">
                     <img src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
@@ -321,12 +322,12 @@
                 </div>
             </div>
         </section>
-        <section class="flex bg-[#ECF6F8] gap-6 p-10 justify-center items-center mt-5">
-            <div>
-                <p class="text-2xl">Most Popular Hotels</p>
+        <section class="flex flex-col lg:flex-row bg-[#ECF6F8] gap-6 p-10 justify-center items-center mt-5">
+            <div class="flex flex-col gap-2">
+                <p class="text-2xl font-semibold">Most Popular Hotels</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum officia blanditiis deleniti
                     tenetur natus esse commodi a aspernatur rerum. Vel.</p>
-                <button class="bg-[#F9B90F] p-2 rounded-xl">View All Hotels</button>
+                <button class="bg-[#F9B90F] p-2 rounded-xl w-32 font-medium">View All Hotels</button>
             </div>
             <div
                 class="bg-[url('./media/Hotel1.png')] bg-no-repeat bg-cover flex flex-col justify-between w-full h-[300px] p-4 rounded-xl">
@@ -399,9 +400,28 @@
 
             </div>
         </section>
+        <section
+            class="bg-[#ECF6F8] h-56 flex flex-col justify-center items-center gap-4 container mx-auto mt-6 rounded-xl">
+            <p class="font-semibold text-2xl">You are an owner of a hotel?</p>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eos inventore sed id
+                in maiores
+                voluptates voluptatem odio et saepe.</p>
+            <button class="bg-[#3AACED] text-white font-medium w-44 p-3 rounded-2xl">
+                <div class="flex justify-center items-center gap-2">
+                    <p>Add your hotel</p><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4.243a1 1 0 1 0-2 0V11H7.757a1 1 0 1 0 0 2H11v3.243a1 1 0 1 0 2 0V13h3.243a1 1 0 1 0 0-2H13V7.757Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </button>
+
+        </section>
 
     </main>
-    <footer class="footer p-10 bg-black text-white mt-8">
+    <footer class="footer p-10 bg-[#1F4B8E] text-white mt-8">
         <aside>
             <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
                 clip-rule="evenodd" class="fill-current">
